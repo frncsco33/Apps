@@ -1,0 +1,46 @@
+
+<html>
+<head>
+  <meta charset='utf-8'/>
+  <title>Dashboard KFC</title>
+  <style>
+    body { font-family: -apple-system, Segoe UI, Roboto, sans-serif; margin: 24px; }
+    h1, h2 { margin: 8px 0; }
+    .grid { display: grid; grid-template-columns: 1fr; gap: 16px; }
+    .card { border:1px solid #eee; border-radius:10px; padding:14px; }
+    table { border-collapse: collapse; width:100%; }
+    th, td { text-align:right; padding:6px 8px; border-bottom:1px solid #eee; }
+    th:first-child, td:first-child { text-align:left; }
+  </style>
+</head>
+<body>
+<h1>Dashboard KFC – Ventas, Funnel y Proyección</h1>
+<div class='grid'>
+  <div class='card'>
+    <h2>Series históricas</h2>
+    <div><a href='sales_series.html'>Ventas con tendencia</a></div>
+    <div><a href='orders_series.html'>Órdenes con tendencia</a></div>
+    <div><a href='funnel.html'>Funnel semanal</a></div>
+    <div><a href='scatter_traffic_orders.html'>Tráfico vs Órdenes</a></div>
+    <div><a href='scatter_markdown_sales.html'>Markdown vs Ventas</a> | <a href='scatter_markdown_orders.html'>Markdown vs Órdenes</a></div>
+  </div>
+  <div class='card'>
+    <h2>Proyección 9 semanas</h2>
+    <div><a href='orders_projection.html'>Órdenes: histórico vs proyección</a></div>
+    <div><a href='sales_projection.html'>Ventas: histórico vs proyección</a></div>
+    <p><b>Incremento estimado al final de 9 semanas</b><br>
+       Órdenes: -2,733<br>
+       Ventas: $-797,569.45
+    </p>
+    <small>Supuestos: +10% tráfico total y +5% conversión total (compuesto), AOV constante (promedio últimas 4 semanas).</small>
+  </div>
+  <div class='card'>
+    <h2>Últimas 8 semanas</h2>
+    <table>
+      <tr><th>Week</th><th>Sales</th><th>Orders</th><th>Traffic</th><th>SS→ORDERS</th><th>Markdown</th><th>AOV</th></tr>
+      <tr><td>2025-07-07</td><td>$15,533,807.00</td><td>54,586</td><td>309,460</td><td>21.1%</td><td>16.0%</td><td>$284.60</td></tr><tr><td>2025-07-14</td><td>$13,477,517.00</td><td>48,852</td><td>235,497</td><td>22.3%</td><td>12.9%</td><td>$275.90</td></tr><tr><td>2025-07-21</td><td>$13,145,355.00</td><td>44,811</td><td>227,381</td><td>22.4%</td><td>16.6%</td><td>$293.40</td></tr><tr><td>2025-07-28</td><td>$13,247,503.00</td><td>43,593</td><td>190,833</td><td>25.1%</td><td>14.9%</td><td>$303.90</td></tr><tr><td>2025-08-04</td><td>$12,879,224.00</td><td>44,415</td><td>199,988</td><td>23.8%</td><td>15.9%</td><td>$290.00</td></tr><tr><td>2025-08-11</td><td>$12,897,313.00</td><td>46,009</td><td>250,210</td><td>19.2%</td><td>12.5%</td><td>$280.30</td></tr><tr><td>2025-08-18</td><td>$13,809,050.00</td><td>50,195</td><td>228,980</td><td>20.1%</td><td>14.2%</td><td>$275.10</td></tr><tr><td>2025-08-25</td><td>$14,295,197.00</td><td>50,601</td><td>195,492</td><td>21.2%</td><td>12.9%</td><td>$282.50</td></tr>
+    </table>
+  </div>
+</div>
+</body>
+</html>
